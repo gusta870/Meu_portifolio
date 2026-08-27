@@ -5,18 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Costa | Portfólio</title>
     <link rel ="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
-        <p class="cabecalho__texto">GUSTAVO COSTA</p>
-        <nav class="cabecalho__menu">
+        <p class="cabecalho__texto">
+            GUSTAVO COSTA
+        </p>
+
+        <button
+            class="cabecalho__botao-menu"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+        >
+            <img
+                class="cabecalho__icone-menu"
+                src="assets/menu.png"
+                alt=""
+            >
+        </button>
+
+        <nav
+            class="cabecalho__menu"
+            aria-label="Navegação principal"
+        >
+            <a class="cabecalho__menu__link" href="index.html">
+                Início
+            </a>
+
             <a class="cabecalho__menu__link" href="about.html">
                 Sobre mim
             </a>
+
             <a class="cabecalho__menu__link" href="project.html">
                 Projetos
             </a>
-            <a class="cabecalho__menu__link" href="#contato">
+
+            <a class="cabecalho__menu__link" href="index.html#contato">
                 Contato
             </a>
         </nav>
